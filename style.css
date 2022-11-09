@@ -1,0 +1,221 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+body{
+    background: f1fbff;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    color:whitesmoke;
+    text-shadow: 8px 8px 8px black;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: static;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+
+}
+.navbar-light.navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light.navbar-brand:focus,
+.navbar-light.navbar-brand:hover{
+    color: black;
+}
+.navbar-light.navbar-nav.navbar-link{
+    color: black
+}
+.w-100{
+    height: 100vh;
+}
+.service .card-body{
+    font-size: 50px;
+}
+/*@media only screen  and (min-width: 768px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+    
+
+@media only screen and(max-width:767px){
+    .navbar-nav{
+        text-align: center;
+    }
+}*/
+.carousel-caption{
+    bottom: 125px;
+}
+.carousel-caption h1{
+    padding: 10px 15px;
+    font-size: 17px;
+}
+.carousel-caption a{
+    padding: 10px 15px;
+}
+.carousel-caption p{
+    width: 100%;
+    line-height: 1.6;
+    font-size: 12px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'poppins', sans-serif;
+text-transform: capitalize;
+transition: all 0.3 linear;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-image: linear-gradient(90deg,white 0% white 100%);
+}
+.box{
+    width: 300px;
+    height: 455px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 80px;
+    margin: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.box h3{
+    font-size: 35px;
+    padding: 20px 0;
+    color: #444;
+
+}
+.box p{
+    font-size: 50px;
+    color:#777;
+}
+.box button{
+    width: 140px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+.box button:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+.box::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.box::after{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    background-image: linear-gradient(45deg,#FBDA61 0%,#FF5ACD 100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    clip-path: circle(20% at 90% 10%);
+    transition: .2s;
+}
+.box .count{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+}
+.box:nth-child(2)::after{
+    background-color: aqua;
+    background-image: linear-gradient(160deg,#0093e9,#80d0c7 100%);
+}
+.box:nth-child(3)::after{
+    background-color: red;
+    background-image: linear-gradient(0deg,#0093e9,#80d0c7 100%);
+}
+.box:hover h3{
+    color:brown;
+}
+.box:hover::after{
+    clip-path: circle(100%);
+}
+.portfolio .card{
+    box-shadow: 15px 15px 40px black;
+}
+.team .card{
+    box-shadow: 15px 15px 40px black;
+}
+.team .card-body i{
+    font-size: 20px;
+}
+.services .card-body i{
+    font-size: 20px;
+    
+}
+.nav-item:hover{
+color: red;    
+}
